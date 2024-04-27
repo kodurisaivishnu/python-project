@@ -1,0 +1,46 @@
+from math import*
+from cmath import*
+gentarl_claculater=1
+scientific_calculator=2
+print( "please enter what type of claculator you want")
+print( )
+print( )
+print("NOTE: FOR GEN.CALCULATOR ENTER 1,FOR SCIENTIFIC ENTER 2")
+print( )
+ct=int(input("select calculator type: "))
+print()
+print( )
+if(ct==1):
+	#sai
+    x=int(input("input any first value:  "))
+    y=int(input("input any second number:  "))
+    print( )
+    print("please enter opearator +,-,*,/")
+    print( )
+    operator=input("input operator value" )
+    if(operator=="+"):
+	    print(x+y)
+    elif(operator=='-'):
+	    print(x-y)
+    elif(operator=='*'):
+	    print(x*y)
+    else:
+	    print(x/y)
+else:
+	print(" you are selected SCIENTIFIC CALCULATOR")
+	print( )
+	sin=int(input("enter ∅ value sin() IF THERE IS NO VALUE PLEASE ENTER 90 : "))
+	cos=int(input("enter ∅ value cos() IF THERE IS NO VALUE PLEASE ENTER 0 : "))
+	tan=int(input("enter ∅ if there is no value please enter 45 : "))
+	print("please enter a operation type")
+	print( )
+	print("select your operation:")
+	print( )
+	print("t1=cos( )+sin()+tan( )")
+	print("t2=cos()+sin()-tan()")
+	print("t3=-cos()+sin()+tan()")
+	print("t4=cos()+sin()-tan()")
+	print("t5=cos()+sin()-tan()")
+	print("t6=cos()+sin()-tan()")
+	print("t7=cos()+sin()-tan()")
+	print("t8=cos()+sin()-tan()")
