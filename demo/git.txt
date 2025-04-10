@@ -1,0 +1,77 @@
+# --------------------------------------
+# 📁 GIT WORKFLOW REFERENCE (BY VISHNU)
+# --------------------------------------
+
+# 1. Initialize Git Repository
+git init
+
+# 2. Check Remote
+git remote -v
+
+# 3. Add Remote (if not already added)
+git remote add origin https://github.com/username/repo.git
+
+# 4. Check Status
+git status
+
+# 5. Stage Files
+git add .
+
+# 6. Commit Changes
+git commit -m "your commit message"
+
+# 7. Push to Remote (first time)
+git push -u origin main
+
+# 8. Create New Branch
+git branch branch-name
+
+# 9. Switch to New Branch
+git checkout branch-name
+
+# Shortcut: Create and switch in one step
+git checkout -b branch-name
+
+# 10. Add & Commit Changes in New Branch
+git add .
+git commit -m "commit message"
+
+# 11. Push New Branch to Remote
+git push origin branch-name
+
+# 12. Switch Back to Main Branch
+git checkout main
+
+# 13. Merge Branch into Main
+git merge branch-name
+
+# 14. Push Updated Main to GitHub
+git push origin main
+
+# -----------------------------
+# 🔍 Other Useful Git Commands
+# -----------------------------
+
+# List All Branches
+git branch
+
+# Delete Local Branch
+git branch -d branch-name
+
+# Delete Remote Branch
+git push origin --delete branch-name
+
+# Pull Latest Changes from Remote
+git pull origin main
+
+# Set Credential Helper (to save login)
+git config --global credential.helper store
+
+# Check Config Settings
+git config --list
+
+# -----------------------------
+# 🐙 GitHub Token Login Reminder
+# -----------------------------
+# Use your GitHub username as the login
+# Use the personal access token (PAT) as the password

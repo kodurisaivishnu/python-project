@@ -1,0 +1,14 @@
+docker --version             # Check Docker version
+docker pull busybox          # Download an image
+docker images                # List downloaded images
+docker run busybox           # Run a container from busybox image
+docker ps                    # List running containers
+docker ps -a                 # List all containers (running + stopped)
+docker stop <container_id>   # Stop a running container
+docker rm <container_id>     # Remove a container
+docker rmi <image_id>        # Remove an image
+
+
+
+docker build -t myimage .            # Build image from Dockerfile
+docker run -d -p 8081:8081 myimage     # Run in detached mode and map ports
